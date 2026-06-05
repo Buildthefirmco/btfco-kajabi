@@ -494,8 +494,9 @@ a.btn-primary:hover {
   }.tle-le-welcome .tle-title{
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 38px;
-    line-height: 1.08;
+    font-size: clamp(2.1rem, 4.2vw, 3rem);
+    line-height: 1.18;
+    letter-spacing: -0.015em;
     color: #00261D;
     margin: 0 0 18px;
   }.tle-le-welcome .tle-title em{
