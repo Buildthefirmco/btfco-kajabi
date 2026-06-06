@@ -4332,17 +4332,19 @@ a.btn-primary:hover {
     line-height: 1.65;
   }.le-the-onboarding-window /* If/then cards */
   .tle-ifthen-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 12px;
     margin: 28px 0 36px;
   }.le-the-onboarding-window .tle-ifthen-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-radius: 10px;
     border: 1px solid #EAE6DF;
     overflow: hidden;
   }.le-the-onboarding-window .tle-ifthen-top{
     background: #F9F5EB;
-    padding: 16px 18px 14px;
+    padding: 18px 20px;
   }.le-the-onboarding-window .tle-ifthen-badge{
     font-size: 9px;
     font-weight: 700;
@@ -4359,8 +4361,8 @@ a.btn-primary:hover {
     font-weight: 300;
   }.le-the-onboarding-window .tle-ifthen-bottom{
     background: #fff;
-    padding: 14px 18px 16px;
-    border-top: 1px solid #EAE6DF;
+    padding: 18px 20px;
+    border-left: 1px solid #EAE6DF;
   }.le-the-onboarding-window .tle-ifthen-bottom .tle-ifthen-badge{ color: #5E7A72; }.le-the-onboarding-window .tle-ifthen-bottom p{
     font-size: 14px;
     color: #00261D;
@@ -4524,7 +4526,7 @@ a.btn-primary:hover {
     flex-shrink: 0;
     margin-left: 16px;
   }
-  @media (max-width: 700px) {.le-the-onboarding-window.tle-lesson{ padding: 40px 24px 60px; }.le-the-onboarding-window h1.tle-h1{ font-size: 1.8rem; }.le-the-onboarding-window .tle-ifthen-grid{ grid-template-columns: 1fr; }.le-the-onboarding-window .tle-curriculum-row{ grid-template-columns: 1fr; gap: 4px; }.le-the-onboarding-window .tle-pull-quote{ padding: 32px 28px; }.le-the-onboarding-window .tle-window-stat{ flex-direction: column; gap: 16px; }.le-the-onboarding-window .tle-window-left{ border-right: none; border-bottom: 1px solid #EAE6DF; padding-right: 0; padding-bottom: 16px; width: 100%; }
+  @media (max-width: 700px) {.le-the-onboarding-window.tle-lesson{ padding: 40px 24px 60px; }.le-the-onboarding-window h1.tle-h1{ font-size: 1.8rem; }.le-the-onboarding-window .tle-ifthen-card{ grid-template-columns: 1fr; }.le-the-onboarding-window .tle-ifthen-bottom{ border-left: none; border-top: 1px solid #EAE6DF; }.le-the-onboarding-window .tle-curriculum-row{ grid-template-columns: 1fr; gap: 4px; }.le-the-onboarding-window .tle-pull-quote{ padding: 32px 28px; }.le-the-onboarding-window .tle-window-stat{ flex-direction: column; gap: 16px; }.le-the-onboarding-window .tle-window-left{ border-right: none; border-bottom: 1px solid #EAE6DF; padding-right: 0; padding-bottom: 16px; width: 100%; }
   }
 /* ===================== le-the-opening-prompt-HEADER-CSS ===================== */
 .le-the-opening-prompt.tle-lesson{ font-family: 'Inter', sans-serif; font-size: 17px; line-height: 1.75; color: #2E4744; max-width: 100%; padding: 40px 64px 60px; box-sizing: border-box; font-weight: 300; }.le-the-opening-prompt.tle-lesson p{ margin: 0 0 20px; font-weight: 300; }.le-the-opening-prompt h1.tle-h1{ font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 400; color: #00261D; line-height: 1.2; margin: 0 0 32px 0; letter-spacing: -0.01em; }.le-the-opening-prompt h1.tle-h1 em{ color: #8E532A; font-style: italic; }.le-the-opening-prompt.tle-lesson p strong{ font-weight: 600; color: #00261D; }.le-the-opening-prompt .tle-section-label{ font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5E7A72; margin: 40px 0 16px; }.le-the-opening-prompt .tle-prompt-box{ background: #00261D; border-radius: 12px; padding: 32px 40px; margin: 0 0 40px; }.le-the-opening-prompt .tle-prompt-label{ font-size: 0.7rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #A8C0BC !important; display: block; margin-bottom: 16px; }.le-the-opening-prompt .tle-prompt-text{ font-family: 'Playfair Display', serif; font-size: 1.2rem; font-style: italic; color: #ffffff !important; line-height: 1.7; margin: 0; }.le-the-opening-prompt .tle-three-col{ display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; }.le-the-opening-prompt .tle-reason-card{ display: flex; gap: 18px; align-items: flex-start; background: #F9F5EB; border: 1px solid #EAE6DF; border-radius: 10px; padding: 20px 24px; }.le-the-opening-prompt .tle-reason-num{ font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; color: #8E532A; min-width: 28px; line-height: 1; padding-top: 3px; }.le-the-opening-prompt .tle-reason-title{ font-weight: 600; font-size: 15px; color: #00261D; margin: 0 0 4px; }.le-the-opening-prompt .tle-reason-desc{ font-size: 15px; color: #5E7A72; margin: 0; line-height: 1.65; font-weight: 300; }.le-the-opening-prompt .tle-script-line{ background: #F9F5EB; border: 1px solid #EAE6DF; border-left: 3px solid #8E532A; border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0; font-style: italic; font-size: 15px; color: #00261D; line-height: 1.7; }.le-the-opening-prompt .tle-two-col{ display: flex; gap: 16px; margin-bottom: 24px; }.le-the-opening-prompt .tle-col{ flex: 1; background: #F9F5EB; border: 1px solid #EAE6DF; border-radius: 10px; padding: 20px 24px; }.le-the-opening-prompt .tle-col-label{ font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; }.le-the-opening-prompt .tle-col-label.green{ color: #5E7A72; }.le-the-opening-prompt .tle-col-label.sienna{ color: #8E532A; }.le-the-opening-prompt .tle-col-intro{ font-size: 14px; color: #5E7A72; font-style: italic; margin-bottom: 12px; font-weight: 300; line-height: 1.6; }.le-the-opening-prompt .tle-col ul{ list-style: none; padding: 0; margin: 0; }.le-the-opening-prompt .tle-col ul li{ position: relative; padding-left: 18px; margin-bottom: 10px; font-size: 15px; line-height: 1.65; color: #2E4744; font-weight: 300; }.le-the-opening-prompt .tle-col ul li::before{ content: ""; position: absolute; left: 4px; top: 10px; width: 6px; height: 6px; border-radius: 50%; }.le-the-opening-prompt .tle-col.doing ul li::before{ background: #5E7A72; }.le-the-opening-prompt .tle-col.not-doing ul li::before{ background: #8E532A; }.le-the-opening-prompt .tle-callout{ background: #fff; border: 1px solid #EAE6DF; border-left: 4px solid #8E532A; border-radius: 0 10px 10px 0; padding: 20px 24px; margin-bottom: 24px; }.le-the-opening-prompt .tle-callout-label{ font-size: 0.7rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #8E532A; display: block; margin-bottom: 10px; }.le-the-opening-prompt .tle-callout p{ font-size: 15px; color: #2E4744; margin: 0; line-height: 1.7; font-weight: 300; }.le-the-opening-prompt .tle-warning-box{ background: #00261D; border-radius: 12px; padding: 24px 32px; margin-top: 40px; }.le-the-opening-prompt .tle-warning-label{ font-size: 0.7rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #A8C0BC !important; display: block; margin-bottom: 10px; }.le-the-opening-prompt .tle-warning-text{ font-size: 16px; color: #ffffff !important; margin: 0; line-height: 1.7; font-weight: 300; }
