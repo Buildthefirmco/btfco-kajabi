@@ -5458,16 +5458,15 @@ a.btn-primary:hover {
 .tle-carousel-controls{ display: none !important; }
 .tle-carousel-slide{ min-width: 0 !important; }
 .tle-carousel-slide + .tle-carousel-slide{ border-top: 1px solid #EAE6DF; }
-/* ===================== le-why-the-middle-drifts: collapsible pattern accordion ===================== */
+/* ===================== le-why-the-middle-drifts: collapsible pattern accordion (house style) ===================== */
 .le-why-the-middle-drifts .tle-pattern-list{ border-top: 1px solid #EAE6DF; margin: 24px 0; }
 .le-why-the-middle-drifts details.tle-pattern{ border-bottom: 1px solid #EAE6DF; }
-.le-why-the-middle-drifts details.tle-pattern > summary{ list-style: none; cursor: pointer; display: flex; align-items: center; gap: 14px; padding: 18px 0; }
+.le-why-the-middle-drifts details.tle-pattern > summary{ list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; }
 .le-why-the-middle-drifts details.tle-pattern > summary::-webkit-details-marker{ display: none; }
-.le-why-the-middle-drifts .tle-pattern-num{ display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: #00261D; color: #F9F5EB; border-radius: 50%; font-size: .7rem; font-weight: 600; letter-spacing: .04em; flex-shrink: 0; }
-.le-why-the-middle-drifts .tle-pattern-title{ flex: 1; font-family: 'Playfair Display', serif; font-size: 1.15rem; font-style: italic; color: #00261D; line-height: 1.3; }
-.le-why-the-middle-drifts .tle-pattern-icon{ flex-shrink: 0; margin-left: auto; color: #8E532A; font-size: 1.4rem; font-weight: 300; line-height: 1; transition: transform .2s ease; }
-.le-why-the-middle-drifts details.tle-pattern[open] .tle-pattern-icon{ transform: rotate(45deg); }
-.le-why-the-middle-drifts .tle-pattern-body{ padding: 2px 0 22px 48px; }
+.le-why-the-middle-drifts .tle-pattern-title{ flex: 1; font-family: 'Playfair Display', serif; font-size: 1.05rem; font-style: italic; color: #00261D; line-height: 1.4; }
+.le-why-the-middle-drifts details.tle-pattern > summary::after{ content: "+"; font-family: 'Inter', sans-serif; font-style: normal; font-size: 1.2rem; font-weight: 300; color: #8E532A; flex-shrink: 0; line-height: 1; }
+.le-why-the-middle-drifts details.tle-pattern[open] > summary::after{ content: "\2212"; }
+.le-why-the-middle-drifts details.tle-pattern > summary:hover .tle-pattern-title{ color: #8E532A; }
+.le-why-the-middle-drifts .tle-pattern-body{ padding: 4px 0 22px; }
 .le-why-the-middle-drifts .tle-pattern-body > p{ margin: 0 0 14px; }
 .le-why-the-middle-drifts .tle-pattern-body > p:last-child{ margin-bottom: 0; }
-@media(max-width:600px){ .le-why-the-middle-drifts .tle-pattern-body{ padding-left: 0; } }
