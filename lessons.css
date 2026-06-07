@@ -5571,4 +5571,13 @@ a.btn-primary:hover {
 .le-why-the-middle-drifts details.tle-pattern > summary:hover .tle-pattern-title{ color: #8E532A; }
 .le-why-the-middle-drifts .tle-pattern-body{ padding: 4px 0 22px; }
 .le-why-the-middle-drifts .tle-pattern-body > p{ margin: 0 0 14px; }
-.le-why-the-middle-drifts .tle-pattern-body > p:last-child{ margin-bottom: 0; }
+.le-why-the-middle-drifts .tle-pattern-body > p:last-child{ margin-bottom: 0; }/* ===== The SOP Edit — reflective prompt (tse-reflect) ===== */
+.tse-lesson .tse-reflect{background:#F9F5EB;border:1px solid #EAE6DF;border-left:4px solid #8E532A;border-radius:0 6px 6px 0;padding:30px 32px 32px;margin:48px 0}
+.tse-lesson .tse-reflect__badge{display:inline-block;background:#8E532A;color:#F9F5EB;font-family:'Inter',sans-serif;font-size:0.65rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+.tse-lesson .tse-reflect__question{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:500;color:#00261D;line-height:1.4;margin:0 0 20px 0}
+.tse-lesson .tse-reflect__question em{color:#8E532A;font-style:italic}
+.tse-lesson .tse-reflect__divider{height:1px;background:#EAE6DF;margin:0 0 18px 0}
+.tse-lesson .tse-reflect__label{font-family:'Inter',sans-serif;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:#8E532A;display:block;margin-bottom:10px}
+.tse-lesson .tse-reflect__instruction p{font-family:'Inter',sans-serif;font-size:0.95rem;font-weight:300;font-style:italic;color:#5E7A72;line-height:1.7;margin:0 0 12px 0}
+.tse-lesson .tse-reflect__instruction p:last-child{margin-bottom:0}
+@media(max-width:700px){.tse-lesson .tse-reflect{padding:24px 22px 26px}.tse-lesson .tse-reflect__question{font-size:1.2rem}}
